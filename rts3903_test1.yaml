@@ -1,0 +1,15 @@
+metadata:
+    name: rts3903_test1
+    format: "test1"
+    description: "this is lava test1 yaml from github"
+    maintainer:
+        - 137921424@qq.com
+    os:
+        - debian
+    devices:
+        - rts3903
+run:
+    steps:
+        - 'echo Hello from lava test!'
+        - 'date'
+        - 'cat /etc/version'
