@@ -13,6 +13,6 @@ run:
         - 'echo Hello from lava test!'
         - 'date'
         - 'cat /etc/version'
-        - 'mount -t nfs -o nolock 10.0.1.10:/home/sarah_wang/nfs /mnt'
+        - 'mount -t nfs -o nolock 10.0.1.10:/home/sarah_wang/nfs /mnt || echo "mount failed"'
         - 'dd if=/mnt/lava-test/rts3904_master/raw.bin of=/dev/mtd0'
         - 'target/usr/www/test_cgi-bin/test_cipher /mnt/crypt/from17/'
