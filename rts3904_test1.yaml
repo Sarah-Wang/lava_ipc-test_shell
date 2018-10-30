@@ -16,3 +16,4 @@ run:
         - 'mount -t nfs -o nolock 10.0.1.10:/home/sarah_wang/nfs /mnt || echo "mount failed"'
         - '/usr/www/cgi-bin/firmware.cgi /mnt/lava-test/rts3904_master/linux.bin'
         - '/usr/www/test_cgi-bin/test_cipher /mnt/crypt/from17/'
+
