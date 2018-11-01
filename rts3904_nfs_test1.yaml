@@ -1,5 +1,5 @@
 metadata:
-    name: rts3904_test1
+    name: rts3904_nfs_test1
     format: "test1"
     description: "this is lava test1 yaml from github"
     maintainer:
@@ -7,13 +7,12 @@ metadata:
     os:
         - debian
     devices:
-        - rts3904
+        - rts3904_nfs
 run:
     steps:
         - 'echo Hello from lava test!'
         - 'date'
         - 'cat /etc/version'
         - 'mount -t nfs -o nolock 10.0.1.10:/home/sarah_wang/nfs /mnt || echo "mount failed"'
-#        - '/usr/www/cgi-bin/firmware.cgi /mnt/lava-test/rts3904_master/linux.bin'
         - '/usr/www/test_cgi-bin/test_cipher /mnt/crypt/from17/'
 
