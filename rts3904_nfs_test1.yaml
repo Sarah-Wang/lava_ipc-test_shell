@@ -15,4 +15,5 @@ run:
         - 'cat /etc/version'
         - 'mount -t nfs -o nolock 10.0.1.10:/home/sarah_wang/nfs /mnt || echo "mount failed"'
         - '/usr/www/test_cgi-bin/test_cipher /mnt/crypt/from17/'
-
+        - 'dd if=/mnt/lava-test/rts3904_master/raw.bin of=/dev/mtd0'
+        - 'reboot'
