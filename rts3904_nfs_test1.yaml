@@ -17,3 +17,5 @@ run:
         - '/usr/www/test_cgi-bin/test_cipher /mnt/crypt/from17/'
         - 'neuralyzer /mnt/lava-test/rts3904_master/linux.bin'
         - 'reboot'
+        - 'echo'
+        - 'cat /etc/version'
