@@ -1,0 +1,22 @@
+metadata:
+    name: rts3904_nfs_test1
+    format: "test1"
+    description: "this is lava test1 yaml from github"
+    maintainer:
+        - 137921424@qq.com
+    os:
+        - debian
+    devices:
+        - rts3904_nfs
+run:
+    steps:
+        - 'echo ##########################'
+        - 'echo update image by lava'
+        - 'date'
+        - 'cat /etc/version'
+        - 'mount -t nfs -o nolock 10.0.1.10:/home/sarah_wang/nfs /mnt || echo "mount failed"'
+        - 'neuralyzer /mnt/lava-test/rts3904_master/linux.bin'
+        - 'reboot'
+        - 'sleep 5'
+        - 'cat /etc/version'
+        - 'echo ##########################'
