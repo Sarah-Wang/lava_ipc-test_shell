@@ -15,4 +15,4 @@ run:
         - 'date'
         - 'cat /etc/version'
         - 'mount -t nfs -o nolock 10.0.1.10:/home/sarah_wang/nfs /mnt || echo "mount failed"'
-        - 'neuralyzer /mnt/lava-test/rts3904_master/linux.bin'
+        - 'neuralyzer /mnt/lava-test/lava-rts3904-1g_master/linux.bin'
